@@ -13,7 +13,7 @@ As seguintes categorias são usadas para classificar tipos de dados pessoais:
   - **Dados observados** - São capturados quando indivíduos registram suas atividades, como dados de localização de celulares.
   - **Dados inferidos** - São baseados na análise de dados voluntários ou observados, como uma pontuação de crédito.
 
-  O termo bits é uma abreviação de `"Digito binário"` e representa a menos parte de dados. Cada bit pode ter apenas dois valores possiveis : 0 ou 1
+  O termo bits é uma abreviação de `"Digito binário"` e representa a menos parte de dados. Cada bit pode ter apenas dois valores possiveis: 0 ou 1
 
 Existem três métodos comuns de transmissão de sinal usados em redes:
   - **Sinais alétricos** - A transmissão é obtida pela representação dos dados como pulsos elétricos em fios de cobre.
