@@ -22,7 +22,7 @@ Existem três métodos comuns de transmissão de sinal usados em redes:
   - **Sinais sem fio** - A transmissão é obtida pelo uso de infravermelho, micro-ondas ou ondas de rádio pelo ar.
 
 ### LARGURA DE BANDA E TAXA DE TRANSFERÊNCIA
-Largura de banda é a capacidade de um meio de transportar dados. A largura de banda digital mede a quantidade de dados que podem fluir de um lugar para o outro durante um terminado tempo. A largura de banda costuma ser medida pelo número de bits que (teoricamente) podem ser enviados através da midia em um segundo. Estas são as medidas comuns de largura de banda:
+Largura de banda é a capacidade de um meio de transportar dados. A largura de banda digital mede a quantidade de dados que podem fluir de um lugar para o outro durante um determinado tempo. A largura de banda costuma ser medida pelo número de bits que (teoricamente) podem ser enviados através da midia em um segundo. Estas são as medidas comuns de largura de banda:
 - Milhares de bits por segundo (Kbps)
 - Milhões de bits por segundo (Mbps)
 - Bilhões de bits por segundo (Gbps)
