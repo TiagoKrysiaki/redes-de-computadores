@@ -74,12 +74,27 @@ Além dos transmissores e receptores GSM e 4G/5G, os smartphones fazem conexões
 É um tecnologia de comunicação sem fio que permite a troca de dados entre dispositivos que estejam bem próximos uns dos outros, normalmente apenas alguns centimetros.
 
 ### CONECTIVIDADE DE DISPOSITIVO MÓVEL
-
-
-
-
 Quase todos os dispositivos móveis podem se conectar a redes WI-FI. É preciso tomar essas precauções para proteger as comunicações WI-FI em dispositivos móveis:
-- 
+- Nunca envie informações de login ou senha usando um texto não criptografado (texto simples).
+- Use uma conexão VPN quando possível se você estiver enviado dados confidenciais.
+- Ative a segurança em redes domésticas.
+- Use criptografia WPA2 ou superior para segurança.
+
+Apple iOS e Android são os dois dos sistemas operacionais mais conhecidos para dispositivos móveis. Os dispositivos móveis são pré-programados para usar uma rede WI-FI para Internet (se houver uma disponível) e o dispositivo pode se conectar ao access point e receber um endereço IP. Se não existir uma rede WI-FI disponível, o dispositivo usará o recurso de dado móveis configurado.
+
+A tecnologia Bluetooth proporciona um modo simples para os dispositivos móveis se conectarem uns aos outros e a acessórios sem fio. O Bluetooth é sem fio, automático e usa muito pouca energia, o que ajuda a economizar a bateria. Alguns exemplos de dispositivos que usam Bluetooth incluem fones de ouvido, teclado, mouse, controle de som, alto-falantes para carros e alto-falantes móveis.
+
+O pareamento Bluetooth ocorre quando dois dispositivos Bluetooth estabelecem uma conexão para compartilhar recursos. Para que os dispositivos se emparelhem. os rádios Bluetooth são ativado e um dispositivo começa a procurar outros dispositivos. Outros dispositivos devem estar configurados no modo detectável, também chamado visivel, para que possam ser detectados.
+
+Quando um dispositivo Bluetooth está no modo detectável, ele transmite as seguintes informações quando outro dispositivo Bluetooth as solicita:
+- Nome
+- Classe de Bluetooth
+- Serviços que o dispositivo pode usar
+- Informações técnicas, como funcionalidade ou a especificação de bluetooth compatível
+
+Durante o processo de emparelhamento, um PIN pode ser solicitado para aumentar o processo de emparelhamento.
+
+---
 
 
 
