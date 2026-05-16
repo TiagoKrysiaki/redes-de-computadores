@@ -60,3 +60,43 @@ A interconexão de ISPs, que forma a espinha dorsal da internet, é uma teia com
 Para ele, conectar-se ao ISP é um processo bastante simples. Esta é a opção de conexão mais comum. Consiste em usar um roteador integrado sem fio para se conectar ao ISP. O roteador inclui um switch para conectar hosts com fio e um AP sem fio para conectar hosts sem fio. O roteador também fornece informações de endereçamento IP do cliente e segurança para hosts internos. Os dois métodos mais comuns são cabo e DSL. Outras opções incluem, satélite e conexão discada usando um linha telefônica.
 
 ----
+
+## MÓDULO 3: REDES SEM FIO E MÓVEIS
+### REDES WIRELESS
+Os celulares usam ondas de rádio para transmitir sinais de voz a antenas montadas em torres localizadas em regiões especificas. Quando é feita uma ligação telefônica, o sinal de voz é retransmitido de uma torre a outra até chegar ao destino. Esse tipo de rede é usado quando você faz uma chamada para outro telefone celular ou para um telefone fixo. Também serve para enviar mensagens diretamente do telefone. O tipo mais comum de rede de telefonia celular é uma rede GSM. As abreviações 3G, 4G, 4G-LTE e 5G são usadas para descrever as redes de celular avançadas que foram otimizadas para transmissão rápida de dados. Atualmente, o 4G ainda domina como a rede móvel atual usada pela maioria dos telefones.
+
+Além dos transmissores e receptores GSM e 4G/5G, os smartphones fazem conexões de várias maneiras.
+
+**WI-FI** - Transmissores e receptores WI-FI localizados no smartphone permitem que o telefone se conecte a redes locais e à Internet. As redes WI-FI normalmente pertencem a proprietários particulares, mas costumam oferecer hostspots de acesso público ou para convidado. Um hospot é uma área onde os sinais de WI-FI estão disponiveis.
+
+**Bluetooth** é uma tecnologia sem fio que permite que os dispositivos se cominiquem em distâncias pequenas. É possivel conectar vários dispositivos ao mesmo tempo com Bluetooth.
+
+É um tecnologia de comunicação sem fio que permite a troca de dados entre dispositivos que estejam bem próximos uns dos outros, normalmente apenas alguns centimetros.
+
+### CONECTIVIDADE DE DISPOSITIVO MÓVEL
+Quase todos os dispositivos móveis podem se conectar a redes WI-FI. É preciso tomar essas precauções para proteger as comunicações WI-FI em dispositivos móveis:
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
