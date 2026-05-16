@@ -74,6 +74,10 @@ Além dos transmissores e receptores GSM e 4G/5G, os smartphones fazem conexões
 É um tecnologia de comunicação sem fio que permite a troca de dados entre dispositivos que estejam bem próximos uns dos outros, normalmente apenas alguns centimetros.
 
 ### CONECTIVIDADE DE DISPOSITIVO MÓVEL
+
+
+
+
 Quase todos os dispositivos móveis podem se conectar a redes WI-FI. É preciso tomar essas precauções para proteger as comunicações WI-FI em dispositivos móveis:
 - 
 
