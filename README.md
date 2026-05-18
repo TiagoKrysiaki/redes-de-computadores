@@ -142,6 +142,61 @@ O modo de uso da rede determina quem pode acessar a rede doméstica. Muitos rote
 
 ---
 
+## MÓDULO 5: PRINCÍPIOS DE COMUNICAÇÃO
+### Protocolo de comunicação
+
+Os protocolos são necessários para que os computadores se comuniquem corretamente na rede. Isso inclui formato de mensagem, tamanho de mensagem, temporização, codificação, encapsulamento e padrões de mensagem.
+
+- **Formato da mensagem** – Quando uma mensagem é enviada, ela deve usar um formato ou estrutura específica.
+- **Tamanho da mensagem** – As regras que regem o tamanho das peças comunicadas pela rede são muito rígidas. Eles também podem ser diferentes, dependendo do canal usado.
+- **Temporização** – A temporização determina a velocidade na qual os bits são transmitidos pela rede. Também afeta quando um host individual pode enviar dados e a quantidade total de dados que pode ser enviada em qualquer transmissão.
+* **Codificação** – As mensagens enviadas pela rede são primeiro convertidas em bits pelo host de envio. Cada bit é codificado em um padrão de sons, de ondas de luz ou de impulsos elétricos, dependendo da mídia de rede em que os bits são transmitidos.
+- **Encapsulamento** – Cada mensagem transmitida em uma rede deve incluir um cabeçalho que contenha informações de endereçamento que identifiquem os hosts de origem e destino. Encapsulamento é o processo de adicionar essas informações aos dados que compõem a mensagem.
+- **Padrão de mensagem** – **Algumas mensagens requerem uma confirmação antes** que a próxima mensagem possa ser enviada. Esse tipo de padrão de solicitação/resposta é um aspecto comum em muitos protocolos de rede. No entanto, existem outros tipos de mensagens que podem ser simplesmente transmitidas pela rede, sem a preocupação de chegarem ao seu destino.
+
+---
+
+### Padrões de comunicação
+
+As topologias nos permitem ver a rede usando a representação de dispositivos finais e dispositivos intermediários. Como um dispositivo vê uma rede? Pense em um dispositivo em uma bolha. Um dispositivo só vê suas próprias informações de endereçamento. Como o dispositivo sabe que está na mesma rede que outro dispositivo? A resposta é: protocolos de rede. A maioria das comunicações de rede é dividida em unidades de dados menores ou pacotes.
+
+Um padrão é um conjunto de regras que determina como algo deve ser feito. Os padrões de rede e de Internet asseguram que todos os dispositivos conectados à rede implementem o mesmo conjunto de regras ou protocolos da mesma forma. O uso de padrões permite que diferentes tipos de dispositivos enviem informações entre si pela Internet.
+
+Um padrão da Internet é o resultado final de um ciclo completo de discussão, solução de problemas e testes. Esses diferentes padrões são desenvolvidos, publicados e mantidos por uma variedade de organizações. Quando um novo padrão é proposto, cada etapa do processo de desenvolvimento e aprovação é registrada em um documento numerado de Solicitação de comentários (RFC), para que a evolução do padrão seja monitorada. As RFCs de padrões da Internet são publicadas e gerenciadas pelo IETF (Internet Engineering Task Force).
+
+---
+
+### Modelos de comunicação de rede
+
+Os protocolos são as regras que regem as comunicações. Uma comunicação bem-sucedida entre hosts requer interação entre vários protocolos. Os protocolos incluem HTTP, TCP, IP e Ethernet. Esses protocolos são implementados em software e hardware instalados em cada host e dispositivo de rede.
+
+A interação entre os diferentes protocolos em um dispositivo pode ser ilustrada como uma pilha de protocolos. Uma pilha ilustra os protocolos como uma hierarquia em camadas, com cada protocolo de alto nível dependendo dos serviços dos protocolos mostrados nos níveis inferiores. A separação das funções permite que cada camada na pilha opere de forma independente das outras.
+
+A suíte de protocolos TCP/IP que é usada para comunicações na Internet segue a estrutura deste modelo:
+
+- **Aplicativo** - Representa dados para o usuário, além de codificação e controle de diálogo
+- **Transporte** - Suporta a comunicação entre vários dispositivos em diversas redes
+- **Internet** - Determina o melhor caminho através da rede
+- **Acesso à rede** - Os dispositivos de hardware e mídia que compõem a rede.
+
+Um modelo de referência descreve as funções que devem estar em uma camada específica, mas não especifica exatamente como uma função deve ser realizada. A principal finalidade de um modelo de referência é ajudar a entender melhor as funções e os processos necessários para as comunicações de rede.
+
+O modelo de referência de internetwork mais conhecido foi criado pelo projeto OSI na ISO Internacional. Ele é usado para projeto de redes de dados, especificações de operação e solução de problemas. Esse modelo costuma ser chamado de modelo OSI.
+
+---
+
+### Descrição das camadas do modelo OSI:
+
+- **7 – Aplicação** – A camada de aplicação contém protocolos usados para comunicações entre processos.
+- **6 – Apresentação** – A camada de apresentação fornece uma representação comum dos dados transferidos entre os serviços da camada de aplicação.
+- **5 – Sessão** – A camada de sessão fornece serviços à camada de apresentação para organizar seu diálogo e gerenciar a troca de dados.
+- **4 – Transporte** – A camada de transporte define serviços para segmentar, transferir e remontar os dados para comunicações individuais entre os dispositivos finais.
+- **3 – Rede** – A camada de rede fornece serviços para troca de dados individuais pela rede entre dispositivos finais identificados.
+- **2 – Enlace de dados** – Os protocolos da camada de enlace de dados descrevem métodos para troca de quadros de dados entre dispositivos em uma mídia comum.
+- **1 – Física** – Os protocolos da camada física descrevem os meios mecânicos, elétricos, funcionais e procedimentais para ativar, manter e desativar conexões físicas para uma transmissão de bits de e para um dispositivo de rede.
+
+---
+
 
 
 
