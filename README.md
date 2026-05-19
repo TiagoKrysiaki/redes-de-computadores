@@ -204,22 +204,21 @@ A comunicação é transmitida através de uma rede na mídia. A mídia fornece 
 
 As redes modernas usam principalmente três tipos de mídia para interconectar dispositivos:
 
-* **Fios de metal dentro de cabos** – Os dados são codificados em impulsos elétricos.
-* **Fibras de vidro ou plástico nos cabos (cabo de fibra óptica)** – Os dados são codificados em pulsos de luz.
-* **Transmissão sem fio** – Os dados são codificados através da modulação de frequências específicas de ondas eletromagnéticas.
+- **Fios de metal dentro de cabos** – Os dados são codificados em impulsos elétricos.
+- **Fibras de vidro ou plástico nos cabos (cabo de fibra óptica)** – Os dados são codificados em pulsos de luz.
+- **Transmissão sem fio** – Os dados são codificados através da modulação de frequências específicas de ondas eletromagnéticas.
 
 Os quatro critérios principais para a escolha da mídia de rede são estes:
 
-* Qual é a distância máxima pela qual o meio físico consegue carregar um sinal com êxito?
-* Qual é o ambiente em que a mídia será instalada?
-* Qual é a quantidade de dados e a que velocidade deve ser transmitida?
-* Qual é o custo da instalação da mídia?
+- Qual é a distância máxima pela qual o meio físico consegue carregar um sinal com êxito?
+- Qual é o ambiente em que a mídia será instalada?
+- Qual é a quantidade de dados e a que velocidade deve ser transmitida?
+- Qual é o custo da instalação da mídia?
 
 Os três cabos de rede mais comuns são par trançado, cabo coaxial e cabo de fibra óptica. A tecnologia Ethernet geralmente usa cabos de par trançado para interconectar dispositivos. O cabo coaxial é um tipo de cabo de cobre usado por empresas de TV a cabo. Também serve para conectar os diversos componentes que constituem os sistemas de comunicação via satélite. O cabo de fibra óptica pode ser de vidro ou plástico com diâmetro aproximadamente igual ao de um cabelo humano e pode transportar informações digitais em velocidades muito altas por longas distâncias. Como a luz é usada em vez de eletricidade, a interferência elétrica não afeta o sinal.
 
 ---
 
-* IKJDDKJD
 
 
 
