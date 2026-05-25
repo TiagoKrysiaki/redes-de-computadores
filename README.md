@@ -1,6 +1,5 @@
 # REDES DE COMPUTADORES
-## MÓDULO 1: COMUNICAÇÃO EM UM MUNDO CONECTADO
-
+## COMUNICAÇÃO EM UM MUNDO CONECTADO
 ### TIPOS DE REDE
   A internet não é de propriedade de nenhum individuo ou grupo. a internet é um conjunto mundial de redes interconectadas (inter-rede ou internet), que cooperam entre si para trocar informações usando padrões comuns. Através de fios de telefone, cabos de fibra óptica, transmissões sem fio e links de satélite, os usuários da internet podem trocar informações de várias formas.
 
@@ -35,8 +34,7 @@ O termo latência se refere ao tempo necessário para os dados viajarem de um po
 
 ---
 
-## MÓDULO 2: COMPONENTES, TIPOS E CONEXÕES DE REDE
-
+## COMPONENTES, TIPOS E CONEXÕES DE REDE
 ### CLIENTES E SERVIDORES
 Todos os computadores conectados a uma rede que participam diretamente na comunicação de rede são classificados como hosts. Os hosts podem enviar e receber mensagens na rede. Nas redes modernas, um host pode atuar como cliente, servidor ou ambos. O software instalado no computador determina qual função o computador desempenha.
 
@@ -61,7 +59,7 @@ Para ele, conectar-se ao ISP é um processo bastante simples. Esta é a opção 
 
 ----
 
-## MÓDULO 3: REDES SEM FIO E MÓVEIS
+## REDES SEM FIO E MÓVEIS
 ### REDES WIRELESS
 Os celulares usam ondas de rádio para transmitir sinais de voz a antenas montadas em torres localizadas em regiões especificas. Quando é feita uma ligação telefônica, o sinal de voz é retransmitido de uma torre a outra até chegar ao destino. Esse tipo de rede é usado quando você faz uma chamada para outro telefone celular ou para um telefone fixo. Também serve para enviar mensagens diretamente do telefone. O tipo mais comum de rede de telefonia celular é uma rede GSM. As abreviações 3G, 4G, 4G-LTE e 5G são usadas para descrever as redes de celular avançadas que foram otimizadas para transmissão rápida de dados. Atualmente, o 4G ainda domina como a rede móvel atual usada pela maioria dos telefones.
 
@@ -96,7 +94,7 @@ Durante o processo de emparelhamento, um PIN pode ser solicitado para aumentar o
 
 ---
 
-## MÓDULO 4: CONSTRUINDO UMA REDE DOMÉSTICA
+## CONSTRUINDO UMA REDE DOMÉSTICA
 ### CONCEITOS BÁSICOS DA REDE DOMÉSTICA
 
 A maioria das redes domésticas consiste em pelo menos duas redes separadas. A rede pública vem do provedor de serviços. O roteador está conectado à internet. Provavelmente, o roteador doméstico tem recursos com e sem fio. Uma rede doméstica é uma pequena LAN com dispositivos que normalmente se conectam uns aos outros e a um roteador integrado para trocar informações.
@@ -142,7 +140,7 @@ O modo de uso da rede determina quem pode acessar a rede doméstica. Muitos rote
 
 ---
 
-## MÓDULO 5: PRINCÍPIOS DE COMUNICAÇÃO
+## PRINCÍPIOS DE COMUNICAÇÃO
 ### Protocolo de comunicação
 
 Os protocolos são necessários para que os computadores se comuniquem corretamente na rede. Isso inclui formato de mensagem, tamanho de mensagem, temporização, codificação, encapsulamento e padrões de mensagem.
@@ -197,7 +195,7 @@ O modelo de referência de internetwork mais conhecido foi criado pelo projeto O
 
 ---
 
-## MÓDULO 6: MÍDIA DE REDE
+## MÍDIA DE REDE
 ### TIPOS DE MÍDIA DE REDE
 
 A comunicação é transmitida através de uma rede na mídia. A mídia fornece o canal pelo qual a mensagem viaja da origem ao destino.
@@ -219,7 +217,7 @@ Os três cabos de rede mais comuns são par trançado, cabo coaxial e cabo de fi
 
 ---
 
-## MÓDULO 7: A CAMADA DE ACESSO
+## A CAMADA DE ACESSO
 ### ENCAPSULAMENTO E O QUADRO ETHERNET
 
 O processo de colocar um formato de mensagem dentro de outro formato de mensagem é chamado de encapsulamento. O desencapsulamento ocorre quando o processo é invertido pelo destinatário e a carta é retirada do envelope. Assim como uma carta é colocada dentro de um envelope para ser entregue, no caso das mensagens de computador, elas são encapsuladas. Uma mensagem enviada por uma rede de computadores segue regras específicas de formato para que seja entregue e processada.
@@ -245,12 +243,47 @@ Um endereço IPv4 é atribuído à conexão de interface de rede de um host. Ess
 
 Cada pacote enviado pela Internet tem um endereço IPv4 de origem e de destino. Essa informação é necessária para os dispositivos de rede garantirem que os dados cheguem ao destino e que as respostas sejam retornadas à origem.
 
----
-
 ### A ESTRUTURA DO ENDEREÇO IPv4
 
 O endereço lógico IPv4 de 32 bits é hierárquico e contém duas partes, a rede e o host Como exemplo, um host com o endereço IPv4 192.168.5.11 e a máscara de sub-rede 255.255.255.0. Os três primeiros octetos (192.168.5) identificam a porção de rede do endereço e o último octeto (11) identifica o host. Isso é conhecido como endereçamento hierárquico porque a porção de rede indica a rede na qual está localizado cada endereço exclusivo de host.
 
 Os roteadores precisam saber apenas como alcançar cada rede, em vez de precisar saber a localização de cada host individual. Com o endereçamento IPv4, poderão existir diversas redes lógicas em uma rede física se a porção de rede dos endereços dos hosts de rede lógica for diferente.
+
+---
+
+## IPv4 E SEGMENTAÇÃO DE REDE
+### UNICAST, BROADCAST E MULTICAST IPv4
+
+Transmissão unicast refere-se a um dispositivo que envia uma mensagem para outro dispositivo em comunicações um-para-um. Um pacote unicast tem um endereço IP de destino que é um endereço unicast que vai para um único destinatário. Um endereço IP de origem só pode ser um endereço unicast, porque o pacote só pode originar-se de uma única origem. Isso independentemente de o endereço IP de destino ser unicast, broadcast ou multicast. Os endereços de host unicast IPv4 estão no intervalo de endereços de 1.1.1.1 a 223.255.255.255.
+
+Transmissão broadcast refere-se a um dispositivo enviando uma mensagem para todos os dispositivos em uma rede, ou seja, comunicação de um para todos. Um pacote de broadcast possui um endereço IP de destino com todos os (1s) na parte do host ou 32 (um) bits. Um pacote de broadcast deve ser processado por todos os dispositivos no mesmo domínio de difusão. Um broadcast pode ser direcionado ou limitado. Um broadcast direcionado é enviado para todos os hosts em uma rede específica. Uma broadcast limitado é enviado para 255.255.255.255. Por padrão, os roteadores não encaminham broadcasts.
+
+Transmissão multicast reduz o tráfego, permitindo que um host envie um único pacote para um conjunto de hosts selecionados que participem de um grupo multicast. Um pacote multicast é um pacote com um endereço IP de destino que é um endereço multicast. O IPv4 reservou os endereços 224.0.0.0 a 239.255.255.255 como intervalo de multicast. Cada grupo multicast é representado por um único endereço IPv4 multicast de destino. Quando um host IPv4 se inscreve em um grupo multicast, o host processa pacotes endereçados tanto a esse endereço multicast como a seu endereço unicast alocado exclusivamente.
+
+---
+
+### TIPOS DE ENDEREÇOS IPv4
+
+Os endereços IPv4 públicos são endereços roteados globalmente entre os roteadores ISP. No entanto, nem todos os endereços IPv4 disponíveis podem ser usados na Internet. Existem blocos de endereços (conhecidos como endereços privados) que são usados pela maioria das organizações para atribuir endereços IPv4 a hosts internos. A maioria das redes internas, de grandes empresas a redes domésticas, usa endereços IPv4 privados para endereçar todos os dispositivos internos (intranet), incluindo hosts e roteadores. No entanto, os endereços privados não são globalmente roteáveis. Antes que o ISP possa encaminhar esse pacote, ele deve traduzir o endereço IPv4 de origem, que é um endereço privado, para um endereço IPv4 público usando NAT (Tradução de Endereços de Rede).
+
+Os endereços de loopback (127.0.0.0 / 8 ou 127.0.0.1 a 127.255.255.254) são mais comumente identificados como apenas 127.0.0.1, esses são endereços especiais usados por um host para direcionar o tráfego para si próprio. Os endereços locais de link (169.254.0.0 / 16 ou 169.254.0.1 a 169.254.255.254) são mais conhecidos como endereços APIPA (endereçamento IP privado automático) ou endereços auto-atribuídos. Eles são usados por um cliente DHCP do Windows para auto-configurar no caso de não existirem servidores DHCP disponíveis.
+
+Em 1981, os endereços IPv4 foram atribuídos usando o endereço classful, conforme definido na RFC 790 ([https://tools.ietf.org/html/rfc790](https://tools.ietf.org/html/rfc790)), Números Atribuídos. Os clientes receberam um endereço de rede com base em uma das três classes, A, B ou C. A RFC dividiu os intervalos de unicast em classes específicas da seguinte maneira:
+
+* **Classe A (0.0.0.0/8 to 127.0.0.0/8)** – Projetado para suportar redes extremamente grandes com mais de 16 milhões de endereços de host.
+* **Classe B (128.0.0.0 / 16 - 191.255.0.0 / 16)** – Projetada para oferecer suporte às necessidades de redes de tamanho moderado a grande com até aproximadamente 65.000 endereços de host.
+* **Classe C (192.0.0.0 / 24 - 223.255.255.0 / 24)** – Projetado para oferecer suporte a pequenas redes com no máximo 254 hosts.
+
+Há também um bloco multicast de Classe D que consiste em 224.0.0.0 a 239.0.0.0 e um bloco de endereço experimental de Classe E que consiste em 240.0.0.0 - 255.0.0.0.
+
+Endereços IPv4 públicos são endereços roteados globalmente pela Internet. Endereços IPv4 públicos devem ser exclusivos. Os endereços IPv4 e IPv6 são gerenciados pela IANA (Internet Assigned Numbers Authority). A IANA gerencia e aloca blocos de endereços IP aos registros regionais de Internet (RIRs). Os RIRs são responsáveis por alocar endereços IP aos ISPs que fornecem blocos de endereços IPv4 para organizações e ISPs menores. As organizações também podem obter seus endereços diretamente de um RIR.
+
+---
+
+### SEGMENTAÇÃO DE REDE
+
+Em uma LAN Ethernet, os dispositivos utilizam broadcast e ARP para localizar outros dispositivos. O ARP envia broadcast de Camada 2 para um endereço IPv4 conhecido na rede local para descobrir o endereço MAC associado. Os dispositivos em LANs Ethernet também localizam outros dispositivos usando serviços. Um host normalmente adquire sua configuração de endereço IPv4 usando o protocolo DHCP que envia broadcasts na rede local para localizar um servidor DHCP. Os switches propagam broadcasts por todas as interfaces, exceto a interface em que foram recebidos.
+
+Um grande domínio de broadcast é uma rede que conecta vários hosts. Um problema desse tipo de domínio é que os hosts podem gerar broadcasts em excesso e afetar a rede de forma negativa. A solução é reduzir o tamanho da rede para criar domínios de broadcast menores em um processo denominado divisão em sub-redes. Os espaços de rede menores são chamados de sub-redes. Esta é a base da divisão em sub-redes: usar bits de host para criar sub-redes adicionais. A divisão em sub-redes reduz o tráfego total da rede e melhora seu desempenho. Permite o administrador implemente políticas de segurança como, por exemplo, quais sub-redes podem ou não se comunicar com quais sub-redes. Ela reduz o número de dispositivos afetados pelo tráfego broadcast anormal devido a configurações incorretas, problemas de hardware/software ou propósito malicioso.
 
 ---
