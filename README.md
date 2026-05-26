@@ -287,3 +287,30 @@ Em uma LAN Ethernet, os dispositivos utilizam broadcast e ARP para localizar out
 Um grande domínio de broadcast é uma rede que conecta vários hosts. Um problema desse tipo de domínio é que os hosts podem gerar broadcasts em excesso e afetar a rede de forma negativa. A solução é reduzir o tamanho da rede para criar domínios de broadcast menores em um processo denominado divisão em sub-redes. Os espaços de rede menores são chamados de sub-redes. Esta é a base da divisão em sub-redes: usar bits de host para criar sub-redes adicionais. A divisão em sub-redes reduz o tráfego total da rede e melhora seu desempenho. Permite o administrador implemente políticas de segurança como, por exemplo, quais sub-redes podem ou não se comunicar com quais sub-redes. Ela reduz o número de dispositivos afetados pelo tráfego broadcast anormal devido a configurações incorretas, problemas de hardware/software ou propósito malicioso.
 
 ---
+
+## FORMATOS E REGRAS DE ENDEREÇAMENTO IPv6
+### PROBLEMAS DE IPv4
+O esgotamento de endereços IPv4 tem sido o fator motivador para a migração para o IPv6. O IPv6 tem um espaço de endereços maior, de 128 bits, fornecendo 340 undecilhões de endereços possíveis. Quando a IETF começou o desenvolvimento de um sucessor para o IPv4, aproveitou para corrigir as limitações do IPv4 e incluir aprimoramentos. Um exemplo é o ICMPv6, que inclui resolução de endereços e configuração automática de endereços não encontrados no ICMPv4.
+
+Ambos IPv4 e IPv6 coexistem e a transição para apenas IPv6 levará vários anos. A IETF criou vários protocolos e ferramentas para ajudar os administradores de rede a migrarem as redes para IPv6. As técnicas de migração podem ser divididas em três categorias: pilha dupla, encapsulamento e tradução. Os dispositivos de pilha dupla executam os protocolos IPv4 e IPv6 simultaneamente. Tunelamento é um método de transporte de pacote IPv6 através de uma rede IPv4. O pacote IPv6 é encapsulado dentro de um pacote IPv4, de forma semelhante a outros tipos de dados. O NAT64 permite que dispositivos habilitados para IPv6 se comuniquem com dispositivos habilitados para IPv4 usando uma técnica de tradução semelhante ao NAT para IPv4. Um pacote IPv6 é traduzido para um pacote IPv4 e um pacote IPv4 é traduzido para um pacote IPv6.
+
+### ENDEREÇAMENTO IPv6
+
+Os endereços IPv6 têm 128 bits e são escritos como uma sequência de valores hexadecimais. Cada quatro bits são representados por um único dígito hexadecimal; perfazendo um total de 32 dígitos hexadecimais. Os endereços IPv6 não diferenciam maiúsculas e minúsculas e podem ser escritos tanto em minúsculas como em maiúsculas. No IPv6, um hexteto que se refere a um segmento de 16 bits, ou quatro dígitos hexadecimais. Cada “x” é um único hexteto, que tem 16 bits ou quatro díitos hexadecimais. Formato preferencial significa que o endereço IPv6 é gravado usando todos os 32 dígitos hexadecimais. Aqui está um exemplo – fe80:0000:0000:0000:0123:4567:89ab:cdef.
+
+Existem duas regras que ajudam a reduzir o número de dígitos necessários para representar um endereço IPv6.
+
+### Regra 1 - omitir zeros à esquerda
+
+Você só pode omitir zeros à esquerda, não zeros à direita.
+
+* 01AB pode ser representado como 1AB
+* 09f0 pode ser representado como 9f0
+* 0a00 pode ser representado como a00
+* 00ab pode ser representado como ab
+
+### Regra 2 - dois pontos duplos
+
+Dois-pontos duplos (::) podem substituir qualquer sequência única e contígua de um ou mais hextetos de 16 bits que consistam em zeros. Por exemplo, 2001:db8:cafe:1:0:0:0:1 (0s iniciais omitidos) poderia ser representado como 2001:db8:cafe:1::1. Os dois-pontos duplos (::) são usados no lugar dos três hextetos compostos por zeros (0:0:0). Os dois-pontos duplos (::) só podem ser usados uma vez dentro de um endereço, caso contrário, haveria mais de um endereço resultante possível. Se um endereço tiver mais de uma string contígua de hextetos com zero, a melhor prática é usar dois pontos duplos (::) na string mais longa. Se as strings forem iguais, a primeira string deve usar dois pontos duplos (::).
+
+---
