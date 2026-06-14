@@ -327,4 +327,35 @@ O servidor DHCP é configurado com um intervalo (ou pool) de endereços IPv4 que
 
 Na maioria das redes de residências e pequenas empresas, um roteador sem fio fornece serviços DHCP aos clientes de rede local. Para configurar um roteador sem fio residencial, acesse a interface gráfica Web abrindo o navegador e inserindo o endereço IPv4 padrão do roteador O endereço IPv4 192.168.0.1 e a máscara de sub-rede 255.255.255.0 são os padrões para a interface interna do roteador. Este é o gateway padrão para todos os hosts na rede local e também o endereço IPv4 interno do servidor DHCP. A maioria dos roteadores sem fio residenciais têm o servidor DHCP ativado por padrão.
 
+---
+## O PROCESSO DE ARP
+### MAC e IP
+
+Às vezes, um host deve enviar uma mensagem, mas ele só sabe o endereço IP do dispositivo de destino. O host precisa saber o endereço MAC desse dispositivo. O endereço MAC pode ser descoberto usando resolução de endereços. Dois endereços principais são atribuídos a um dispositivo em uma LAN Ethernet:
+
+- **Endereço físico (endereço MAC)** – Usado para comunicações de NIC para NIC na mesma rede Ethernet.
+- **Endereço lógico (endereço IP)** – Usado para enviar o pacote do dispositivo de origem para o dispositivo de destino. O endereço IP de destino pode estar na mesma rede IP da origem ou em uma rede remota.
+
+Quando o endereço IP de destino (IPv4 ou IPv6) estiver em uma rede remota, o endereço MAC de destino será o endereço do gateway padrão do host (ou seja, a interface do roteador). Os roteadores examinam o endereço IP de destino para determinar o melhor caminho para encaminhar o pacote IP. Quando o roteador recebe o quadro Ethernet, ele desencapsula as informações da Camada 2. Usando o endereço IP de destino, ele determina o dispositivo do próximo salto e, em seguida, encapsula o pacote IP em um novo quadro (da camada de enlace) para a interface de saída.
+
+Ao longo de cada link do caminho, um pacote IP é encapsulado em um quadro. O quadro é específico para a tecnologia de enlace associada a esse link, como Ethernet. Se o dispositivo do próximo salto for o destino final, o endereço MAC de destino será o da NIC Ethernet do dispositivo.
+
+### CONTENÇÃO DE BROADCAST
+
+Uma mensagem pode conter apenas um endereço MAC de destino. A resolução de endereços permite que um host envie uma mensagem de broadcast para um endereço MAC exclusivo que é reconhecido por todos os hosts. O endereço MAC de broadcast é um endereço de 48 bits, com todos eles iguais a 1. Os endereços MAC geralmente são representados em notação hexadecimal. O endereço MAC de broadcast em notação hexadecimal é **FFFF.FFFF.FFFF**. Cada F em notação hexadecimal representa quatro uns em binário.
+
+Quando um host envia uma mensagem de broadcast, os switches encaminham a mensagem para cada host conectado na mesma rede local. Por esse motivo, uma rede local (ou seja, uma rede com um ou mais switches Ethernet) também é conhecida como domínio de broadcast.
+
+Se muitos hosts estiverem conectados ao mesmo domínio de broadcast, o tráfego de broadcast poderá ficar excessivo. O número de hosts e a quantidade de tráfego de rede que pode ser suportada na rede local são limitados pelos recursos dos switches usados para conectá-los. Para melhorar o desempenho, pode ser necessário dividir uma rede local em várias redes ou domínios de broadcast. Os roteadores são usados para dividir a rede em vários domínios de broadcast.
+
+Em uma rede Ethernet local, uma NIC só aceitará um quadro se o endereço de destino for o endereço MAC de broadcast ou corresponder ao endereço MAC da NIC. A maioria dos aplicativos de rede depende do endereço IP de destino lógico para identificar a localização dos servidores e clientes. Como o host emissor determina o endereço MAC de destino a ser colocado no quadro? O host remetente pode fazer uma consulta ARP para descobrir o endereço MAC de qualquer host na mesma rede local.
+
+O ARP usa um processo de três etapas para descobrir e armazenar o endereço MAC de um host da rede local, quando apenas o endereço IPv4 do host é conhecido:
+
+1. O host remetente cria e envia um quadro destinado ao endereço MAC de broadcast. Incluído no quadro, está uma mensagem com o endereço IPv4 do host de destino a ser alcançado.
+2. Cada host na rede recebe o quadro de broadcast e compara o endereço IPv4 na mensagem com o endereço IPv4 configurado. O host com o endereço IPv4 correspondente envia o endereço MAC de volta para o host emissor original.
+3. O host emissor recebe a mensagem e armazena as informações do endereço IPv4 e do endereço MAC em uma tabela chamada tabela ARP.
+
+O IPv6 usa um método semelhante conhecido como Descoberta de Vizinhos (Neighbor Discovery).
+
 
