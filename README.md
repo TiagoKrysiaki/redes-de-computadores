@@ -388,8 +388,6 @@ Um host conhece o endereço IPv4 do roteador por meio do endereço de gateway pa
 
 Tabelas de roteamento contêm endereços de redes e o melhor caminho para acessar essas redes. As entradas podem ser feitas na tabela de roteamento de duas maneiras: atualizadas dinamicamente por informações recebidas de outros roteadores na rede ou inseridas manualmente por um administrador de rede.
 
-Aqui está a transcrição exata do texto contido na imagem image_98ffaf.png:
-
 ## CRIANDO UMA LAN
 
 LAN refere-se a uma rede local ou a um grupo de redes locais interconectadas que estão sob o mesmo controle administrativo. Todas as redes locais dentro de uma LAN estão sob um controle administrativo. Outras características comuns das LANs são que elas normalmente usam protocolos Ethernet ou Wireless e suportam altas taxas de transmissão de dados.
@@ -399,6 +397,4 @@ Dentro de uma LAN, é possível colocar todos os hosts em uma única rede local 
 Colocar todos os hosts em uma única rede local permite que eles sejam vistos por todos os outros hosts. Isso ocorre porque existe um domínio de broadcast e os hosts usam o ARP para se localizarem.
 
 Colocando hosts adicionais em uma rede remota diminuirá o impacto em demandas de tráfego. No entanto, os hosts em uma rede não poderão se comunicar com hosts na outra rede sem o uso de roteamento. Os roteadores aumentam a complexidade da configuração de rede e podem introduzir latência (ou seja, atraso) nos pacotes enviados de uma rede local para outra.
-
-
 
