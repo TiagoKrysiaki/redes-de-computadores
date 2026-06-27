@@ -398,3 +398,31 @@ Colocar todos os hosts em uma única rede local permite que eles sejam vistos po
 
 Colocando hosts adicionais em uma rede remota diminuirá o impacto em demandas de tráfego. No entanto, os hosts em uma rede não poderão se comunicar com hosts na outra rede sem o uso de roteamento. Os roteadores aumentam a complexidade da configuração de rede e podem introduzir latência (ou seja, atraso) nos pacotes enviados de uma rede local para outra.
 
+---
+## TCP e UDP
+O UDP é um sistema de entrega de melhor esforço que não requer confirmação de recebimento. O UDP é preferível para aplicações como a transmissão de áudio e vídeo ao vivo, e Voz sobre IP (VoIP). Confirmações retardariam a entrega e retransmissões são indesejáveis. Os pacotes seguem um caminho da origem até um destino. Alguns pacotes podem ser perdidos, mas isso geralmente não é percebido.
+
+Os pacotes TCP seguem um caminho da origem até o destino. No entanto, cada um dos pacotes tem um número de sequência. O TCP divide uma mensagem em pequenos pedaços conhecidos como segmentos. Os segmentos são numerados em sequência e passados para o processo IP para montagem em pacotes. O TCP monitora o número de segmentos que foram enviados a um host específico de um aplicativo específico. Quando o remetente não recebe uma confirmação dentro de um certo período, ele supõe que os segmentos foram perdidos e transmite-os novamente. Somente a parte da mensagem perdida é reenviada, e não toda a mensagem.
+
+Aqui está a transcrição exata do texto contido na imagem image_a71b6a.png:
+
+### NÚMEROS DE PORTA
+
+Quando uma mensagem é entregue usando o TCP ou o UDP, os protocolos e os serviços são identificados por um número de porta. Uma porta é um identificador numérico dentro de cada segmento que é usado para rastrear conversas específicas entre um cliente e um servidor. Cada mensagem que um host envia contém uma porta origem e destino.
+
+Quando uma mensagem é recebida por um servidor, é necessário que o servidor consiga determinar qual serviço está sendo solicitado pelo cliente. Os clientes são pré-configurados para usar uma porta de destino que foi registrada na Internet para cada serviço.
+
+As portas são atribuídas e gerenciadas por uma organização conhecida como ICANN (Corporação da Internet para Atribuição de Nomes e Números). As portas foram divididas em três categorias e variam em número de 1 a 65.535.
+
+* **Portas bem conhecidas** – As portas de destino que estão associadas a aplicativos de rede comuns são identificadas como portas bem conhecidas. Elas estão no intervalo de 1 a 1.023.
+* **Portas registradas** – As portas 1.024 a 49.151 podem ser usadas como portas de destino ou de origem. Elas podem ser usadas por empresas para registrar aplicativos específicos, como os de mensagem instantânea.
+* **Portas privadas** – As portas de 49.152 a 65.535 são geralmente utilizadas como portas de origem. Elas podem ser usadas por qualquer aplicativo.
+
+O número da porta de origem é gerado dinamicamente pelo dispositivo de envio para identificar uma conversa entre dois dispositivos. Este processo permite que várias conversas ocorram simultaneamente. É comum que um dispositivo envie várias solicitações de serviço HTTP para um servidor Web ao mesmo tempo. Cada conversa HTTP separada é rastreada com base em portas origem.
+
+O cliente preenche um número de porta destino no segmento para informar o servidor destino qual serviço está sendo solicitado. Um servidor pode oferecer mais de um serviço simultaneamente como serviços Web na porta 80, ao mesmo tempo que oferece o estabelecimento de uma conexão FTP na porta 21.
+
+Conexões TCP desconhecidas podem representar uma grande ameaça à segurança. Elas podem indicar que algo ou alguém está conectado ao host local. Às vezes é necessário conhecer quais conexões TCP ativas estão abertas e sendo executadas em um host de rede. O netstat é um utilitário de rede importante que pode ser usado para verificar essas conexões. O comando netstat é usado para listar os protocolos em uso, o endereço e os números de porta locais, o endereço e os números de porta externos, e o estado da conexão.
+
+---
+
