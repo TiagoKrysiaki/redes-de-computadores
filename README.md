@@ -358,4 +358,47 @@ O ARP usa um processo de três etapas para descobrir e armazenar o endereço MAC
 
 O IPv6 usa um método semelhante conhecido como Descoberta de Vizinhos (Neighbor Discovery).
 
+---
+
+## ROTEAMENTO ENTRE REDES
+### ## A NECESSIDADE DO ROTEAMENTO
+
+À medida que as redes crescem, geralmente é necessário dividir uma rede de camada de acesso em várias redes de camada de acesso. As diversas formas de divisão de redes são definidas por critérios diferentes.
+
+* **Contenção de broadcast** – Roteadores na camada de distribuição podem limitar broadcasts somente para a rede local onde devam ser escutados.
+* **Requisitos de segurança** – Os roteadores na camada de distribuição podem separar e proteger determinados grupos de computadores onde residem informações confidenciais.
+* **Localização física** – Os roteadores na camada de distribuição podem ser usados para interconectar redes locais em vários locais de uma organização que estão separados geograficamente.
+* **Agrupamento lógico** – Os roteadores na camada de distribuição podem ser usados para agrupar logicamente usuários, como departamentos de uma empresa, que tenham necessidades comuns ou acesso a recursos.
+
+A camada de distribuição conecta estas redes locais independentes e controla o fluxo do tráfego entre elas. Ela é responsável por garantir que o tráfego entre hosts na rede local permaneça local.
+
+Um roteador é um dispositivo de rede que conecta várias redes IP de Camada 3. Na camada de distribuição da rede, os roteadores direcionam o tráfego e realizam outras funções essenciais em uma operação de rede eficiente. Os roteadores, como switches, conseguem decodificar e ler as mensagens que são enviadas para eles. Ao contrário dos switches, que tomam uma decisão de encaminhamento com base no endereço MAC da Camada 2, os roteadores fundamentam suas decisões de encaminhamento no endereço IP da Camada 3.
+
+Sempre que a porção de rede dos endereços IP dos hosts de origem e de destino não coincidir, deverá ser usado um roteador para encaminhar a mensagem.
+
+## A TABELA DE ROTEAMENTO
+
+Cada porta ou interface em um roteador conecta-se a uma rede local diferente. Cada roteador contém uma tabela de todas as redes localmente conectadas e as interfaces que se conectam a essas redes.
+
+Quando um roteador recebe um quadro, ele decodifica o quadro para obter o pacote que contém o endereço IP de destino. Ele combina a porção de rede do endereço IP de destino com as redes listadas na tabela de roteamento. Se o endereço de rede de destino estiver na tabela, o roteador encapsulará o pacote em um novo quadro para enviá-lo. Ele encaminha o novo quadro para a rede de destino, fora da interface associada ao caminho. O processo de encaminhamento de pacotes para a rede destino é chamado de roteamento.
+
+Um roteador encaminha um pacote para um destes dois locais: a) uma rede diretamente conectada que contém o host de destino real ou b) outro roteador no caminho para o host de destino. Quando um roteador encapsula o quadro para encaminhá-lo para uma interface roteada, ele deve incluir um endereço MAC de destino. Se o roteador precisar encaminhar o pacote para outro roteador por meio de uma interface roteada, ele usará o endereço MAC do roteador conectado. Os roteadores obtêm esses endereços MAC nas tabelas ARP.
+
+Um host conhece o endereço IPv4 do roteador por meio do endereço de gateway padrão configurado em suas configurações de TCP/IP. O endereço do gateway padrão é o endereço da interface do roteador conectada à mesma rede local do host de origem. Todos os hosts na rede local usam o endereço do gateway padrão para enviar mensagens ao roteador.
+
+Tabelas de roteamento contêm endereços de redes e o melhor caminho para acessar essas redes. As entradas podem ser feitas na tabela de roteamento de duas maneiras: atualizadas dinamicamente por informações recebidas de outros roteadores na rede ou inseridas manualmente por um administrador de rede.
+
+Aqui está a transcrição exata do texto contido na imagem image_98ffaf.png:
+
+## CRIANDO UMA LAN
+
+LAN refere-se a uma rede local ou a um grupo de redes locais interconectadas que estão sob o mesmo controle administrativo. Todas as redes locais dentro de uma LAN estão sob um controle administrativo. Outras características comuns das LANs são que elas normalmente usam protocolos Ethernet ou Wireless e suportam altas taxas de transmissão de dados.
+
+Dentro de uma LAN, é possível colocar todos os hosts em uma única rede local ou dividi-los entre várias redes conectadas por um dispositivo na camada de distribuição.
+
+Colocar todos os hosts em uma única rede local permite que eles sejam vistos por todos os outros hosts. Isso ocorre porque existe um domínio de broadcast e os hosts usam o ARP para se localizarem.
+
+Colocando hosts adicionais em uma rede remota diminuirá o impacto em demandas de tráfego. No entanto, os hosts em uma rede não poderão se comunicar com hosts na outra rede sem o uso de roteamento. Os roteadores aumentam a complexidade da configuração de rede e podem introduzir latência (ou seja, atraso) nos pacotes enviados de uma rede local para outra.
+
+
 
