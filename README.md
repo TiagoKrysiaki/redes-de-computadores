@@ -399,12 +399,11 @@ Colocar todos os hosts em uma única rede local permite que eles sejam vistos po
 Colocando hosts adicionais em uma rede remota diminuirá o impacto em demandas de tráfego. No entanto, os hosts em uma rede não poderão se comunicar com hosts na outra rede sem o uso de roteamento. Os roteadores aumentam a complexidade da configuração de rede e podem introduzir latência (ou seja, atraso) nos pacotes enviados de uma rede local para outra.
 
 ---
+
 ## TCP e UDP
 O UDP é um sistema de entrega de melhor esforço que não requer confirmação de recebimento. O UDP é preferível para aplicações como a transmissão de áudio e vídeo ao vivo, e Voz sobre IP (VoIP). Confirmações retardariam a entrega e retransmissões são indesejáveis. Os pacotes seguem um caminho da origem até um destino. Alguns pacotes podem ser perdidos, mas isso geralmente não é percebido.
 
 Os pacotes TCP seguem um caminho da origem até o destino. No entanto, cada um dos pacotes tem um número de sequência. O TCP divide uma mensagem em pequenos pedaços conhecidos como segmentos. Os segmentos são numerados em sequência e passados para o processo IP para montagem em pacotes. O TCP monitora o número de segmentos que foram enviados a um host específico de um aplicativo específico. Quando o remetente não recebe uma confirmação dentro de um certo período, ele supõe que os segmentos foram perdidos e transmite-os novamente. Somente a parte da mensagem perdida é reenviada, e não toda a mensagem.
-
-Aqui está a transcrição exata do texto contido na imagem image_a71b6a.png:
 
 ### NÚMEROS DE PORTA
 
