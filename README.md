@@ -361,7 +361,7 @@ O IPv6 usa um método semelhante conhecido como Descoberta de Vizinhos (Neighbor
 ---
 
 ## ROTEAMENTO ENTRE REDES
-### ## A NECESSIDADE DO ROTEAMENTO
+### A NECESSIDADE DO ROTEAMENTO
 
 À medida que as redes crescem, geralmente é necessário dividir uma rede de camada de acesso em várias redes de camada de acesso. As diversas formas de divisão de redes são definidas por critérios diferentes.
 
@@ -376,7 +376,7 @@ Um roteador é um dispositivo de rede que conecta várias redes IP de Camada 3. 
 
 Sempre que a porção de rede dos endereços IP dos hosts de origem e de destino não coincidir, deverá ser usado um roteador para encaminhar a mensagem.
 
-## A TABELA DE ROTEAMENTO
+### A TABELA DE ROTEAMENTO
 
 Cada porta ou interface em um roteador conecta-se a uma rede local diferente. Cada roteador contém uma tabela de todas as redes localmente conectadas e as interfaces que se conectam a essas redes.
 
@@ -388,7 +388,7 @@ Um host conhece o endereço IPv4 do roteador por meio do endereço de gateway pa
 
 Tabelas de roteamento contêm endereços de redes e o melhor caminho para acessar essas redes. As entradas podem ser feitas na tabela de roteamento de duas maneiras: atualizadas dinamicamente por informações recebidas de outros roteadores na rede ou inseridas manualmente por um administrador de rede.
 
-## CRIANDO UMA LAN
+### CRIANDO UMA LAN
 
 LAN refere-se a uma rede local ou a um grupo de redes locais interconectadas que estão sob o mesmo controle administrativo. Todas as redes locais dentro de uma LAN estão sob um controle administrativo. Outras características comuns das LANs são que elas normalmente usam protocolos Ethernet ou Wireless e suportam altas taxas de transmissão de dados.
 
