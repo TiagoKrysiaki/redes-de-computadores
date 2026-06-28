@@ -1,4 +1,5 @@
 # REDES DE COMPUTADORES
+## RESUMO EM ÁUDIO - [CLIQUE AQUI](https://notebooklm.google.com/notebook/434c34db-4292-40d3-97c7-375e484f4f79/artifact/485abd43-a71b-4a2b-8d7c-b9e694bcd93d?utm_source=nlmm_share)
 ## COMUNICAÇÃO EM UM MUNDO CONECTADO
 ### TIPOS DE REDE
   A internet não é de propriedade de nenhum individuo ou grupo. a internet é um conjunto mundial de redes interconectadas (inter-rede ou internet), que cooperam entre si para trocar informações usando padrões comuns. Através de fios de telefone, cabos de fibra óptica, transmissões sem fio e links de satélite, os usuários da internet podem trocar informações de várias formas.
