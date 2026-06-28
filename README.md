@@ -425,3 +425,81 @@ Conexões TCP desconhecidas podem representar uma grande ameaça à segurança. 
 
 ---
 
+## SERVIÇOS DA CAMADA DE APLICAÇÃO
+### A RELAÇÃO CLIENTE - SERVIDOR
+
+O termo servidor refere-se a um host executando um aplicativo de software que fornece informações ou serviços para outros hosts conectados à rede, como um servidor web. Um exemplo de software cliente é um navegador, como Chrome ou FireFox. Um único computador pode também executar vários tipos de software cliente. Um fator crucial para permitir que essas interações complexas funcionem é que todas elas usam padrões e protocolos acordados.
+
+A principal característica de sistemas cliente/servidor é que o cliente envia uma solicitação para o servidor, o qual responde ao executar uma função, como o envio de um documento solicitado de volta para o cliente. A combinação de navegador Web e servidor Web é provavelmente a instância mais usada de um sistema cliente/servidor.
+
+Um URI é uma sequência de caracteres que identifica um recurso de rede específico. As partes de uma URI são protocolo/esquema, nome do host, caminho e nome do arquivo e fragmento. Uma URI tem duas especializações:
+
+* **URN** - Identifica apenas o namespace do recurso sem referência ao protocolo.
+* **URL** - Isso define o localização de rede de um recurso específico na rede. URLs de HTTP ou HTTPS são normalmente usados por navegadores web. Outros protocolos como FTP, SFTP, SSH e outros podem ser usados por meio de uma URL.
+
+### NETWORK APLLICATION SERVICES
+
+Para a maioria das pessoas, os serviços de Internet mais comuns que eles usam incluem pesquisas na Internet, sites de mídia social, streaming de vídeo e áudio, sites de compras on-line, e-mail e mensagens. Cada um desses serviços depende de protocolos, do conjunto de protocolos TCP/IP, para comunicar de forma confiável as informações entre os clientes e os servidores. Os serviços comuns incluem: DNS, SSH, SMTP, POP, IMAP, DHCP, HTTP e FTP.
+
+### DOMAIN NAME SYSTEM (SISTEMA DE NOMES DE DOMÍNIOS).
+
+O DNS fornece uma maneira para os hosts solicitarem o endereço IP de um servidor específico. Os nomes DNS são registrados e organizados na Internet em grupos ou domínios específicos de alto nível. Alguns dos domínios de alto nível mais comuns na Internet são .com, .edu e .net.
+
+Quando o servidor DNS recebe a solicitação de um host, ele verifica sua tabela para determinar o endereço IP associado a esse servidor web. Se o servidor DNS local não tiver uma entrada para o nome solicitado, ele consultará outro servidor DNS no domínio. Quando o servidor DNS aprende o endereço IP, essa informação é enviada de volta ao host.
+
+### CLIENTES E SERVIDORES WEB
+
+Quando um cliente Web recebe o endereço IP de um servidor Web, o navegador do cliente usa esse endereço IP e a porta 80 para solicitar serviços da Web. Essa solicitação é enviada para o servidor usando HTTP. O protocolo HTTP não é um protocolo seguro; as informações podem ser facilmente interceptadas por outros usuários à medida que os dados são enviados pela rede. Para fornecer segurança aos dados, o HTTP pode ser usado com protocolos de transporte seguros. As solicitações de HTTP seguro são enviadas para a porta 443. Essas solicitações usam https no endereço do site no navegador, em vez de http.
+
+Quando um cliente Web recebe o endereço IP de um servidor Web, o navegador do cliente usa esse endereço IP e a porta 80 para solicitar serviços da Web. O conteúdo de informação de uma página web é codificado usando HTML. A codificação HTML informa ao navegador como formatar a página Web e quais gráficos e fontes usar.
+
+Existem muitos servidores web e clientes web diferentes. Os padrões de HTML e do protocolo HTTP fazem com que esses servidores e clientes de diversos fabricantes trabalhem em conjunto sem dificuldades.
+
+### CLIENTES E SERVIDORES FTP
+
+O FTP fornece um método fácil de transferir arquivos de um computador para outro. Um host com software de cliente FTP pode acessar um servidor FTP para executar várias funções de gerenciamento de arquivos, como uploads e downloads. O servidor FTP permite que o cliente troque arquivos entre dispositivos. Ele também possibilita que os clientes gerenciem arquivos remotamente enviando comandos de gerenciamento de arquivos, como delete ou rename. Para conseguir isso, o serviço FTP usa duas portas diferentes para a comunicação entre cliente e servidor. Para iniciar uma sessão de FTP, as solicitações de conexão de controle são enviadas para o servidor usando a porta TCP de destino 21. Quando a sessão é aberta, o servidor usa a porta TCP 20 para transferir os arquivos de dados.
+
+A maioria dos sistemas operacionais de cliente (como Windows, Mac OS e Linux) inclui uma interface de linha para o FTP. Há também um software cliente FTP baseado em GUI que fornece uma interface simples de arrastar e soltar para FTP.
+
+### TERMINAIS VIRTUAIS
+
+O Telnet fornece um método padrão de emulação de dispositivos terminais baseados em texto na rede de dados. O protocolo e o software cliente que implementa o protocolo são comumente chamados de Telnet. Os servidores Telnet escutam solicitações de clientes na porta TCP 23. Uma conexão usando Telnet é chamada de sessão vty, ou conexão. Em vez de usar um dispositivo físico para se conectar ao servidor, o Telnet usa software para criar um dispositivo virtual que fornece os mesmos recursos de uma sessão de terminal com acesso à CLI do servidor.
+
+O Telnet não é considerado um protocolo seguro. Embora o protocolo Telnet possa exigir o login de um usuário, ele não suporta o transporte de dados criptografados. Todos os dados trocados durante as sessões Telnet são transportados como texto simples pela rede. Isso significa que os dados podem ser facilmente interceptados e compreendidos.
+
+O SSH fornece a estrutura para proteger login remoto e outros serviços de rede segura. Ele também fornece autenticação mais forte do que o Telnet e suporta o transporte de dados de sessão usando criptografia. Os profissionais de rede devem procurar usar SSH no lugar de Telnet, sempre que possível.
+
+### E-MAISL E MENSAGENS
+
+Cada servidor de e-mail recebe e armazena e-mails de usuários que têm caixas de correio configuradas no servidor de e-mail. Cada usuário com uma caixa de correio deve usar um cliente de e-mail para acessar o servidor de e-mail e ler essas mensagens. Muitos sistemas de mensagens da Internet usam um cliente baseado na Web para acessar emails, incluindo Microsoft 365, Yahoo e Gmail. Os protocolos de aplicação usados no processamento de e-mail incluem SMTP, POP3 e IMAP4.
+
+O SMTP é usado por um cliente de e-mail para enviar mensagens para o servidor de e-mail local. O servidor local então decide se a mensagem é destinada a uma caixa de correio local ou se é endereçada a uma caixa de correio em outro servidor. Se o servidor precisar enviar a mensagem para um servidor diferente, o SMTP será usado entre esses dois servidores. As solicitações SMTP são enviadas para a porta 25. Um servidor compatível com clientes POP recebe e armazena as mensagens endereçadas a seus usuários. Quando o cliente se conecta ao servidor de e-mail, as mensagens são baixadas no cliente. Por padrão, as mensagens não são mantidas no servidor após serem acessadas pelo cliente. Os clientes contatam os servidores POP3 na porta 110.
+
+Um servidor compatível com clientes IMAP também recebe e armazena as mensagens endereçadas a seus usuários. Entretanto, ao contrário do POP, o IMAP mantém as mensagens nas caixas de correio no servidor, a menos que elas sejam excluídas pelo usuário. A versão mais recente de IMAP é o IMAP4, que ouve solicitações do cliente na porta 143.
+
+As mensagens de texto podem ser chamadas de mensagens instantâneas, mensagens diretas, mensagens privadas e mensagens de bate-papo. As mensagens de texto permitem que os usuários conversem pela Internet em tempo real. Os serviços de mensagens de texto em um computador geralmente são acessados por meio de um cliente baseado na Web integrado a uma mídia social ou site de compartilhamento de informações. Esses clientes geralmente se conectam apenas a outros usuários do mesmo site.
+
+Um cliente de telefonia pela Internet usa tecnologia peer-to-peer semelhante à usada por mensagens instantâneas. A telefonia IP usa VoIP, que converte sinais de voz analógicos em dados digitais. Os dados de voz são encapsulados em pacotes IP, que transportam a chamada telefônica pela rede.
+
+---
+
+## UTILITÁRIOS DE TESTE DE REDE
+### Comandos
+
+para solução de problemas. Vários softwares utilitários estão disponíveis para ajudar a identificar problemas de rede. A maioria desses utilitários é fornecida pelo sistema operacional como comandos da CLI.
+
+Estes são alguns dos utilitários disponíveis:
+
+* **ipconfig** - Exibe informações da configuração IP.
+* **ping** - Testa conexões com outros hosts IP.
+* **netstat** - Exibe as conexões de rede.
+* **tracert** - Exibe a rota percorrida até o destino.
+* **nslookup** - Consulta diretamente o servidor de nomes para obter informações sobre um domínio de destino.
+
+O comando **ipconfig** é usado para exibir as informações de configuração de IP atuais de um host. A emissão deste comando a partir do prompt de comando exibirá as informações básicas de configuração, incluindo endereço IP, máscara de sub-rede e gateway padrão.
+
+O comando **ipconfig /all** exibe informações adicionais que incluem o endereço MAC, os endereços IP do gateway padrão e os servidores DNS. Ele também indica se o DHCP está ativado, o endereço do servidor DHCP e as informações da concessão.
+
+Se as informações de endereçamento IP forem atribuídas dinamicamente, o comando **ipconfig /release** liberará as ligações DHCP atuais. **ipconfig /renew** solicitará novas informações de configuração ao servidor DHCP. Um host pode conter informações de configuração de IP desatualizadas ou com falhas. Com uma simples renovação dessas informações, a conectividade pode ser recuperada.
+
+Provavelmente, o utilitário de rede mais usado é o **ping**. A maioria dos dispositivos habilitados para IP oferece suporte a alguma forma do comando **ping** para testar se dispositivos de rede podem ou não ser alcançados através da rede IP. Quando um ping é enviado para um endereço IP, um pacote conhecido como **echo request** é enviado através da rede para o endereço IP especificado. Se o host de destino receber o **echo request**, ele responderá com um pacote conhecido como **echo reply**. Se a origem receber o **echo reply**, a conectividade será verificada pela resposta do endereço IP específico.
