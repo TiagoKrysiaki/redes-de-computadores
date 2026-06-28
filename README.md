@@ -469,7 +469,7 @@ O Telnet não é considerado um protocolo seguro. Embora o protocolo Telnet poss
 
 O SSH fornece a estrutura para proteger login remoto e outros serviços de rede segura. Ele também fornece autenticação mais forte do que o Telnet e suporta o transporte de dados de sessão usando criptografia. Os profissionais de rede devem procurar usar SSH no lugar de Telnet, sempre que possível.
 
-### E-MAISL E MENSAGENS
+### E-MAILS E MENSAGENS
 
 Cada servidor de e-mail recebe e armazena e-mails de usuários que têm caixas de correio configuradas no servidor de e-mail. Cada usuário com uma caixa de correio deve usar um cliente de e-mail para acessar o servidor de e-mail e ler essas mensagens. Muitos sistemas de mensagens da Internet usam um cliente baseado na Web para acessar emails, incluindo Microsoft 365, Yahoo e Gmail. Os protocolos de aplicação usados no processamento de e-mail incluem SMTP, POP3 e IMAP4.
 
